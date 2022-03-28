@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/refresh"
+        app:layout_constraintStart_toEndOf="@+id/ribon"
+        app:layout_constraintTop_toTopOf="@+id/ribon" />
+
+    <ImageView
+        android:id="@+id/pemain"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/pemain"
+        app:layout_constraintBottom_toTopOf="@+id/player_choice"
+        app:layout_constraintEnd_toEndOf="@+id/player_choice"
+        app:layout_constraintStart_toStartOf="@+id/player_choice" />
+
+    <ImageView
+        android:id="@+id/player_choice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ribon"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/computer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/computer"
+        app:layout_constraintBottom_toTopOf="@+id/com_choice"
+        app:layout_constraintEnd_toEndOf="@+id/com_choice"
+        app:layout_constraintStart_toStartOf="@+id/com_choice" />
+
+    <ImageView
+        android:id="@+id/com_choice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_choice"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/ribon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/ribon_menang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
