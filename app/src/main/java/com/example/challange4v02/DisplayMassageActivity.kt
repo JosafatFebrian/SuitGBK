@@ -2,6 +2,7 @@ package com.example.challange4v02
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -20,10 +21,11 @@ class DisplayMassageActivity : AppCompatActivity () {
         val userChoice = intent.getStringExtra(EXTRA_MESSAGE)
         val userImage = findViewById<ImageView>(R.id.player_choice)
         var imgResId = R.drawable.batu
+        Log.d("gambar", userChoice.toString())
 
         when (userChoice){
             "player_batu" -> imgResId = R.drawable.batu
-            "Player_gunting" -> imgResId = R.drawable.gunting
+            "player_gunting" -> imgResId = R.drawable.gunting
             "player_kertas" -> imgResId = R.drawable.kertas
             else -> R.drawable.batu
 
@@ -41,9 +43,9 @@ class DisplayMassageActivity : AppCompatActivity () {
         var imgResIdcom = R.drawable.batu
 
         when (compChoice){
-            "com_batu" -> imgResId = R.drawable.batu
-            "com_gunting" -> imgResId = R.drawable.gunting
-            "com_kertas" -> imgResId = R.drawable.kertas
+            "com_batu" -> imgResIdcom = R.drawable.batu
+            "com_gunting" -> imgResIdcom = R.drawable.gunting
+            "com_kertas" -> imgResIdcom = R.drawable.kertas
             else -> R.drawable.batu
         }
         compImage.setImageResource(imgResIdcom)
